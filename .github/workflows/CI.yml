@@ -1,0 +1,12 @@
+name: Continous Integration
+on: [push]
+
+jobs:
+    build:
+        name: Build & Test
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Hello World 
+              run: echo 'Hello World'
