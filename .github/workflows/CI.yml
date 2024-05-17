@@ -10,5 +10,9 @@ jobs:
 
     - name: Build C# Code
       run: dotnet build
+    
+    - name: NPM Install 
+      run: npm install 
+      working-directory: DotnetTemplate.Web 
 
 
